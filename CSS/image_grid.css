@@ -1,3 +1,5 @@
+/* IMAGE GRID */
+
 /* 
   Code copied and modified from: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp
   Author: W3Schools
@@ -17,7 +19,7 @@
   .image-grid-column {
     flex: 25%;
     max-width: 20%;
-    padding: 4px;
+    padding: 0.5em 0.5em 0.5em 0em;
   }
   
   .image-grid-column img {
@@ -69,7 +71,7 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #008CBA;
+    background-color: #985452;
   }
   
   .image-grid-container:hover .image-grid-overlay {
@@ -83,7 +85,8 @@
   
   .image-grid-title {
     color: white;
-    font-size: 1.3em;
+    font-size: 1.1em;
+    text-transform: uppercase;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -106,3 +109,5 @@
     width: 100%;
   }
   /* Copied Code Ends */
+
+

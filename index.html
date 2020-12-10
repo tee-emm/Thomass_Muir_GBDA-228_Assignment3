@@ -1,3 +1,12 @@
+<!-- 
+Note: due to my design, I decided that it would be 
+more efficient to stick with a single page design compiled 
+in one html file. This is because a page-based navigation s
+ystem that would redirect to other html files from the file 
+server would conflict inherently with my design. Instead, I 
+chose to use scrolling algorithms that would help the user 
+navigate my website seamlessly.  -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,9 +16,18 @@
     <meta name="keywords" content="Thomass Muir, Personal, UX Design">
     <meta name="author" content="Thomass Muir">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Import CSS Files -->
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="CSS/image_grid.css">
+    <link rel="stylesheet" href="CSS/fixed_elements.css">
+    <link rel="stylesheet" href="CSS/main_welcome.css">
+    <link rel="stylesheet" href="CSS/main_aboutme.css">
+    <link rel="stylesheet" href="CSS/main_poetry.css">
+    <link rel="stylesheet" href="CSS/main_otherart.css">
+    <link rel="stylesheet" href="CSS/main_contactme.css">
 
+    <!-- FONTS -->
     <!-- Poppins Semi-Bold 600 -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
@@ -22,17 +40,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kadwa&display=swap" rel="stylesheet">
 
+    <!-- Javascript -->
     <!-- jQuery -->
-    <script src="./jquery-2.1.1.js"></script>
+    <script src="Javascript/jquery-2.1.1.js"></script>
 
     <!-- Type JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
 
-    <!-- import JS code -->
-    <script src="index.js"></script>
+    <!-- Assorted -->
+    <script src="Javascript/index.js"></script>
 
+
+    <!-- Title -->
     <title>Thomass Muir</title>
 
+    <!-- for scrolling purposes -->
     <div class="header"></div>
 </head>
 
@@ -69,6 +91,7 @@
     </div>
 
 
+    <!-- Sidebar Navigation Menu  -->
     <!-- 
     Part of code copied and modified from: https://codepen.io/plavookac/pen/qomrMw
     Author: Jelena Jovanovic
@@ -97,7 +120,10 @@
     </div>
     <!-- Copied code ends -->
 
+
     <!-- Main page content -->
+
+    <!-- SECTION 1: Welcome Page -->
     <section>
         <div class="main main-welcome"><a id="01">
                 <div id="bottom">
@@ -107,6 +133,15 @@
                     <span id="page-headers" class="animated-type"></span>
                     <br>
 
+                    <!-- 
+                    Adapted code from: https://codepen.io/cristaleonard/pen/QYyQrM
+                    Author: Crista Leonard
+                    Name: Go Go Coding Rangers
+                    Description: Displays a scrolling progress indicator
+                    Date retrieved: Sunday, December 6, 2020 
+                    -->
+
+                    <!-- Adapted Code Starts -->
                     <!-- Navigation Menu -->
                     <ol id="menu">
                         <li onclick="scrollToSection('01')"><a><span class="text-detail">01.</span> Welcome</a></li>
@@ -115,11 +150,14 @@
                         <li><a href=""><span class="text-detail">04.</span> Other Art</a></li>
                         <li><a href=""><span class="text-detail">05.</span> Contact Me</a></li>
                     </ol>
+
+                    <!-- Adapted Code Ends -->
                 </div>
         </div>
         </a>
     </section>
 
+    <!-- SECTION 2: About Me Page -->
     <section>
         <div class="main main-aboutme"><a id="02">
                 <div id="bottom">
@@ -144,10 +182,20 @@
         </a>
     </section>
 
-    <!-- -->
+    <!-- SECTION 3: Poetry Page -->
     <section>
         <div class="main main-poetry flip-card-box"><a id="03">
                 <div id="bottom">
+
+                    <!-- 
+                    Code adapted from: https://www.w3schools.com/howto/howto_css_flip_card.asp
+                    Author: W3Schools
+                    Name: How to - Flip Card
+                    Description: Creates a card that flips to reveal more information
+                    Date retrieved: Wednesday, Dec. 6, 2020
+                     -->
+
+                    <!-- Adapted code starts -->
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
@@ -279,6 +327,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Adapted code ends -->
                     <br>
                     <p id="page-headers"><span class="text-detail">03.</span>POETRY
             </a></p>
@@ -286,65 +335,82 @@
         </a>
         </div>
     </section>
-    <!--  -->
 
-    <!--  -->
+    <!-- SECTION 4: Other Art -->
     <section>
         <div class="main main-otherart ">
             <a id="04">
                 <div id="bottom">
+
+                    <!-- 
+                Code adapted (used example) from: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp
+                Author: W3Schools
+                Name: How to - Responsive Image Grid
+                Description: Creates a Responsive Image Grid.
+                Date retrieved: Tuesday, Dec. 8, 2020       -->
+
+                    <!-- Adapted Code Begins -->
+
                     <div class="image-grid-row">
                         <div class="image-grid-column">
                             <div class="image-grid-container">
-                                <img class="image-grid-image" src="Images/Other Art/fall photo.jpg">
+                                <img class="image-grid-image" src="Images/Other Art/fall photo.jpg"
+                                    alt="Fall's a Comin': Photography" width="100%" height="100%">
                                 <div class="image-grid-overlay">
-                                    <div class="image-grid-title">Title</div>
-                                    <div class="image-grid-text">More text can go here</div>
+                                    <div class="image-grid-title">Fall's a Comin'</div>
+                                    <div class="image-grid-text">Photography</div>
                                 </div>
                             </div>
                             <div class="image-grid-container">
-                                <img class="image-grid-image" src="Images/Other Art/fox.jpg">
+                                <img class="image-grid-image" src="Images/Other Art/fox.jpg" alt="Fox: Digital Painting"
+                                    width="100%" height="100%">
                                 <div class="image-grid-overlay">
-                                    <div class="image-grid-title">Title</div>
-                                    <div class="image-grid-text">More text can go here</div>
+                                    <div class="image-grid-title">Fox & Friend</div>
+                                    <div class="image-grid-text">Digital Painting</div>
                                 </div>
                             </div>
                         </div>
                         <div class="image-grid-column">
                             <div class="image-grid-container">
-                                <img class="image-grid-image" src="Images/Other Art/ice cream mockup.jpg">
+                                <img class="image-grid-image" src="Images/Other Art/ice cream mockup.jpg"
+                                    alt="Ice Cream Onboarding App Mockup" width="100%" height="100%">
                                 <div class="image-grid-overlay">
-                                    <div class="image-grid-title">Title</div>
-                                    <div class="image-grid-text">More text can go here</div>
+                                    <div class="image-grid-title">Daily Scoop</div>
+                                    <div class="image-grid-text">Onboarding App Design</div>
                                 </div>
                             </div>
                             <div class="image-grid-container">
-                                <img class="image-grid-image" src="Images/Other Art/koi fish.png">
+                                <img class="image-grid-image" src="Images/Other Art/koi fish.png"
+                                    alt="Koi Fish: Digital Painting" width="100%" height="100%">
                                 <div class="image-grid-overlay">
-                                    <div class="image-grid-title">Title</div>
-                                    <div class="image-grid-text">More text can go here</div>
+                                    <div class="image-grid-title">Koi Fish</div>
+                                    <div class="image-grid-text">Digital Painting</div>
                                 </div>
                             </div>
                         </div>
                         <div class="image-grid-column">
                             <div class="image-grid-container">
                                 <img class="image-grid-image" class="image-grid-image"
-                                    src="Images/Other Art/podcast cover.png"  alt="Podcast Art: Digital Painting" width="100%" height="100%">
+                                    src="Images/Other Art/podcast cover.png" alt="Podcast Art: Digital Painting"
+                                    width="100%" height="100%">
                                 <div class="image-grid-overlay">
-                                    <div class="image-grid-title">Title</div>
-                                    <div class="image-grid-text">More text can go here</div>
+                                    <div class="image-grid-title">Shifting Sands: The Podcast</div>
+                                    <div class="image-grid-text">Vector Art</div>
                                 </div>
                             </div>
                             <div class="image-grid-container">
                                 <img class="image-grid-image" src="Images/Other Art/refraction.png"
                                     alt="Refraction: Digital Painting" width="100%" height="100%">
                                 <div class="image-grid-overlay">
-                                    <div class="image-grid-title">Title</div>
-                                    <div class="image-grid-text">More text can go here</div>
+                                    <div class="image-grid-title">Boo: Refraction</div>
+                                    <div class="image-grid-text">Digital Painting</div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Adapted Code Ends -->
+
                     <p id="page-headers"><span class="text-detail">04.</span>OTHER ART</p>
                 </div>
         </div>
@@ -354,24 +420,21 @@
 
     </section>
 
-    <!--  -->
+    <!-- SECTION 5: Form-->
     <section>
         <div class="main main-contactme">
             <div id="bottom">
                 <p id="page-headers"> <span class="text-detail">05.</span> CONTACT ME </p>
                 <form id="contact-form" action="mailto:thomass@thomassmuir.com" method="GET">
                     <input name="Subject" id="subject" type="text" placeholder="Subject">
-                    <textarea name="Body" id="message" type="text" placeholder="What Would You Like to Say?"></textarea>
+                    <textarea name="Body" id="message" type="text"
+                        placeholder="Message. Note: clicking submit will opens your default mail-app with recipient, subject, and body."></textarea>
                     <input id="submit" type="submit" value="Confirm">
                 </form>
-                <a id="05">
-                </a>
             </div>
-
-        </div>
+        </div><a id="05">
+        </a>
     </section>
-
-
 
 </body>
 
