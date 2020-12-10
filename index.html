@@ -361,10 +361,9 @@
             <a id="05">
                 <div id="bottom">
                     <p id="page-headers"> <span class="text-detail">05.</span> CONTACT ME </p>
-                    <form id="contact-form">
-                        <input id="name" type="text" placeholder="Name">
-                        <input id="email" type="text" placeholder="E-mail">
-                        <textarea id="message" type="text" placeholder="What Would You Like to Say?"></textarea>
+                    <form id="contact-form" action="mailto:youraddr@domain.tld" method="GET">
+                        <input name="Subject" id="subject" type="text" placeholder="Subject">
+                        <textarea name="Body" id="message" type="text" placeholder="What Would You Like to Say?"></textarea>
                         <input id="submit" type="submit" value="Confirm">
                     </form>
                 </div>
