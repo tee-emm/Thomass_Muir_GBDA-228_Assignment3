@@ -1,0 +1,622 @@
+.header {
+    position: fixed;
+    height: 4em;
+    width: 100%;
+    background-color: #FDFBF7;
+    z-index: 60;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FDFBF7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    color: #35363A;
+    margin: 0px;
+
+    /* min-width: 320px; */
+}
+
+#name-header {
+    /* reduce margin for better spacing */
+    margin-top: 0;
+    margin-bottom: 0.45em;
+
+}
+
+#page-headers {
+    /* reduce margin for better spacing */
+    margin: 0;
+}
+
+/* The sidebar menu */
+
+.sidebar {
+
+    /* Sidebar size and positioning */
+    height: 100%;
+    width: 6em;
+    position: fixed;
+
+    /*  
+    Code copied from: https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp
+    Author: w3schools.com
+    Name: Create a fixed sidebar
+    Description: Displays a fixed sidebar (left hand side)
+    Date retrieved: Wednesday, Dec. 9, 2020
+    */
+
+    /* ------------------------------------------ */
+    /* Copied Code Starts */
+
+    /* Stay on top */
+    z-index: 63;
+    top: 0;
+    left: 0;
+
+    /* Disable horizontal scroll */
+    overflow-x: hidden;
+
+    /* Copied Code Ends */
+    /* ------------------------------------------ */
+
+    /* Padding and Border*/
+    padding-top: 20px;
+    border-right: 1.5px dashed #645754;
+
+}
+
+/* The navigation menu links */
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 1em;
+    color: #818181;
+    display: block;
+}
+
+/* Style page content */
+.main-welcome {
+    /* Slightly greater than width of the sidebar */
+    margin-left: 7.5em;
+}
+
+.main-aboutme {
+    /* Slightly greater than width of the sidebar */
+    margin-left: 7.5em;
+}
+
+.main-poetry {
+    /* Slightly greater than width of the sidebar */
+    margin-left: 7.5em;
+}
+
+
+/* Sidebar Logo */
+#logo-image img {
+    float: none;
+    /* element does not float */
+    width: 40%;
+
+    /* centers logo */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sidebar-text {
+    /* rotates text */
+    writing-mode: vertical-rl;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+
+    /* centers logo in sidebar div*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* class to filter SVG images to dark grey colour */
+.filter-icons {
+    filter: invert(16%) sepia(0%) saturate(2983%) hue-rotate(279deg) brightness(96%) contrast(81%);
+}
+
+#socialmedia-logos {
+    /* positions at bottom */
+    position: absolute;
+    bottom: 5%;
+}
+
+#socialmedia-logos img {
+    /* size and positioning */
+    float: none;
+    width: 25%;
+    padding: 10px 0px 10px 0px;
+
+    /* centers logo in sidebar div*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bottom {
+    position: absolute;
+    bottom: 4.5%;
+}
+
+/* WELCOME PAGE */
+
+.main {
+    background-color: #FDFBF7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    color: #35363A;
+}
+
+.main-welcome {
+    /* positions at bottom */
+    position: relative;
+    height: 100vh;
+}
+
+/* THOMASS page header */
+#name-header {
+    /* heavier font that normal font */
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+}
+
+/* Page Section Headers */
+#page-headers {
+    font-family: 'Kadwa', serif;
+    font-size: 1em;
+    letter-spacing: 0.2em;
+    display: inline;
+}
+
+
+/* ABOUT ME */
+.main-aboutme {
+    /* positions at bottom */
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.main-aboutme p {
+    font-family: 'Poppins', sans-serif;
+    width: 45vw;
+    font-size: 1.2em;
+}
+
+.main-aboutme a:link {
+    text-decoration: none;
+    color: #985452;
+}
+
+.main-aboutme a:visited {
+    text-decoration: none;
+    color: #985452;
+}
+
+/* Link on hover */
+.main-aboutme a:hover {
+    text-decoration: none;
+    color: #EDCC91;
+}
+
+.main-aboutme a:active {
+    text-decoration: none;
+    color: #EDCC91;
+}
+
+/* POETRY */
+.main-poetry {
+    /* positions at bottom */
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+
+
+/* Navigation menu*/
+#menu {
+    font-family: 'Kadwa', serif;
+    font-size: 1em;
+    letter-spacing: 0.2em;
+    display: inline;
+    list-style-type: none;
+}
+
+/* Navigation menu styling */
+#menu li {
+    border-bottom: 1.5px solid #985452;
+    width: 10em;
+    padding: 0.2em 0em 0.2em 0em;
+    cursor: pointer;
+}
+
+/* Normal link */
+#menu a:link {
+    text-decoration: none;
+}
+
+/* Visited link */
+#menu a:visited {
+    text-decoration: none;
+    color: #35363A;
+}
+
+/* Link on hover */
+#menu a:hover {
+    text-decoration: none;
+    color: #EDCC91;
+}
+
+/* Link when clicked */
+#menu a:active {
+    text-decoration: none;
+    color: #EDCC91;
+}
+
+/* Menu navigation numbers */
+.text-detail {
+    font-family: 'Kadwa', serif;
+    color: #985452;
+}
+
+.typed-cursor {
+    opacity: 1;
+    animation: blink .7s infinite;
+}
+
+/* typed blinking cursor opacity */
+@keyframes blink {
+    0% {
+        opacity: 3;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* 
+Parts of code copied from: https://codepen.io/cristaleonard/pen/QYyQrM
+Author: Crista Leonard
+Name: Go Go Coding Rangers
+Description: Displays a scrolling progress indicator
+Date retrieved: Sunday, December 6, 2020 
+*/
+
+/* ------------------------------------------ */
+/* Copied Code Starts */
+/* Scroll Indicator */
+.scroll-indicator {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    left: 8em;
+    top: 2%;
+    z-index: 99;
+}
+
+.scroll-indicator li {
+    width: 15px;
+    height: 15px;
+    background: #EFE0D0;
+    border-radius: 50%;
+    margin-top: 15px;
+    transition: ease-in-out 0.3s;
+}
+
+.scroll-indicator li:hover,
+.scroll-indicator li.current-page {
+    background: #985452;
+}
+
+section>div {
+    position: relative;
+}
+
+/* Copied Code Ends */
+/* ------------------------------------------ */
+
+/* Personal styling + addons */
+.scroll-indicator li {
+    list-style-type: none;
+    float: left;
+    margin-right: 0.6em;
+}
+
+/* Scroll indicator text */
+#indicator-text {
+    /* Styling */
+    color: #35363A;
+    font-family: 'Kadwa', serif;
+    font-weight: lighter;
+    letter-spacing: 0.2em;
+}
+
+#indicator-text p {
+    /* Text positioning for scrolling indicatior label */
+    width: 15em;
+    position: absolute;
+    display: inline-block;
+    margin-top: 0.4em;
+    margin-left: 1.5em;
+}
+
+
+
+/*  
+Part of code copied and modified from: https://codepen.io/plavookac/pen/qomrMw
+Author: Jelena Jovanovic
+Name: Pure CSS sidebar Toggle Menu
+Description: Displays a toggled pull out side nav menu (right hand side)
+Date retrieved: Wednesday, Dec. 9, 2020
+*/
+
+/* ------------------------------------------ */
+/* Copied Code Starts */
+#sidenavMenu {
+    /* Font Styling */
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.2em;
+    font-weight: 100;
+
+    /* Positioning */
+    height: 100%;
+    position: fixed;
+    right: 0%;
+    margin: 0;
+    width: 250px;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+    background: #985452;
+    z-index: 500;
+
+}
+
+.sidenavMenuInner li {
+    list-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: lighter;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    padding-left: 0%;
+    margin-left: 0%;
+    cursor: pointer;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.sidenavMenuInner li span {
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.sidenavMenuInner li a {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+input[type="checkbox"]:checked~#sidenavMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+
+.sidenavIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: fixed;
+    z-index: 501;
+    height: 100%;
+    width: 100%;
+    top: 1.6em;
+    right: 1.5em;
+    height: 1.5em;
+    width: 1.5em;
+}
+
+/* Sidebar Icon Toggle Animations */
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: fixed;
+    height: 3px;
+    width: 100%;
+    background-color: #35363A;
+}
+
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+
+input[type=checkbox]:checked~.sidenavIconToggle>.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+input[type=checkbox]:checked~.sidenavIconToggle>.diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+
+input[type=checkbox]:checked~.sidenavIconToggle>.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+
+/* Copied Code Ends */
+/* ------------------------------------------ */
+
+/* Repositions List */
+ul.sidenavMenuInner {
+    padding-inline-start: 0px;
+}
+
+/* Changes colour of link section when hovered over */
+ul.sidenavMenuInner li:hover {
+    background-color: #EDCC91;
+    color: #35363A;
+}
+
+/* Changes colour of link when hovered over */
+ul.sidenavMenuInner li:hover a {
+    background-color: #EDCC91;
+    color: #35363A;
+}
+
+
+/* POETRY FLIP CARDS */
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 22em;
+    height: 30em;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+.flip-card img {
+    border-radius: 0.5em;
+    width:22em;
+    height:30em
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    transition: transform 0.4s;
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+    border-radius: 0.5em;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #FDFBF7;
+    color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: #985452;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+
+
+/* ADDITIONAL RESOPNSIVE DESIGN RULES*/
+
+@media screen and (max-width: 650px) {
+
+    /* About Me Screen Text */
+    .main-aboutme p {
+        font-family: 'Poppins', sans-serif;
+        width: 60vw;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    /* Scrolling Indicator Label */
+    #indicator-text p {
+        /* Text positioning for scrolling indicatior label */
+        /* width: 15em; */
+        position: absolute;
+        display: none;
+        margin-top: 2em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    /* About Me Screen Text */
+    .main-aboutme p {
+        font-family: 'Poppins', sans-serif;
+        width: 60vw;
+        font-size: 0.8em;
+    }
+
+}
+
+@media screen and (max-height: 450px) {
+
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}

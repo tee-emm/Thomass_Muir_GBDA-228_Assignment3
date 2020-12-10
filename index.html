@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Thomass Muir's Personal Website">
+    <meta name="keywords" content="Thomass Muir, Personal, UX Design">
+    <meta name="author" content="Thomass Muir">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="CSS/styles.css">
+
+    <!-- Poppins Semi-Bold 600 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Poppins Light 300 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+    <!-- Kadwa Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kadwa&display=swap" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="./jquery-2.1.1.js"></script>
+
+    <!-- Type JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+
+    <!-- import JS code -->
+    <script src="index.js"></script>
+
+    <title>Thomass Muir</title>
+
+    <div class="header"></div>
+</head>
+
+<body>
+    <!-- Fixed Sidebar -->
+    <div class="sidebar">
+        <div id=logo-image><img src="Images/Logo.jpg" alt="Thomass Logo"></div>
+        <br>
+        <div id=sidebar-text>THOMASS MUIR</div>
+
+        <!-- icons made by flaticon.com -->
+        <div id=socialmedia-logos>
+            <a href="https://www.instagram.com/thomass.muir/"><img src="Images/Social Media/instagram.svg"
+                    class="filter-icons" alt="Instagram Logo"></a>
+            <a href="https://www.linkedin.com/in/thomass-muir/"><img src="Images/Social Media/linkedin.svg"
+                    class="filter-icons" alt="LinkedIn Logo"></a>
+            <a href="https://twitter.com/ThomassMuir"><img src="Images/Social Media/twitter.svg" class="filter-icons"
+                    alt="Twitter Logo"></a>
+            <a href="mailto:t2muir@uwaterloo.com"><img src="Images/Social Media/email.svg" class="filter-icons"
+                    alt="Email Logo"></a>
+        </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div id="indicator-text">
+        <ul class="scroll-indicator">
+            <li onclick="scrollToSection('01')"></li>
+            <li onclick="scrollToSection('02')"></li>
+            <li onclick="scrollToSection('03')"></li>
+            <li onclick="scrollToSection('04')"></li>
+            <li onclick="scrollToSection('05')"></li>
+            <p><span class="text-detail">01.</span> &nbsp;&nbsp;| &nbsp; Welcome</p>
+        </ul>
+    </div>
+
+
+    <!-- 
+    Part of code copied and modified from: https://codepen.io/plavookac/pen/qomrMw
+    Author: Jelena Jovanovic
+    Name: Pure CSS sidebar Toggle Menu
+    Description: Displays a toggled pull out side nav menu (right hand side)
+    Date retrieved: Wednesday, Dec. 9, 2020
+    -->
+
+    <!-- Copied code starts -->
+    <div class="header"></div>
+    <input type="checkbox" class="openSidenavMenu" id="openSidenavMenu">
+    <label for="openSidenavMenu" class="sidenavIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner horizontal"></div>
+        <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidenavMenu">
+        <ul class="sidenavMenuInner">
+            <br><br><br>
+            <li onclick="scrollToSection('01')"><a>&emsp;Welcome</a></li>
+            <li onclick="scrollToSection('02')"><a>&emsp;About Me</a></li>
+            <li onclick="scrollToSection('03')"><a>&emsp;Poetry</a></li>
+            <li><a href="" target="_blank">&emsp;Other Art</a></li>
+            <li><a href="" target="_blank">&emsp;Contact Me</a></li>
+        </ul>
+    </div>
+    <!-- Copied code ends -->
+
+    <!-- Main page content -->
+    <section>
+        <div class="main main-welcome"><a id="01">
+                <div id="bottom">
+                    <p id="page-headers"><span class="text-detail">01.</span> HELLO, I'M</p>
+                    <h2 id="name-header">Thomass</h2>
+                    <p id="page-headers">I am </p>
+                    <span id="page-headers" class="animated-type"></span>
+                    <br>
+
+                    <!-- Navigation Menu -->
+                    <ol id="menu">
+                        <li onclick="scrollToSection('01')"><a><span class="text-detail">01.</span> Welcome</a></li>
+                        <li onclick="scrollToSection('02')"><a><span class="text-detail">02.</span> About Me</a></li>
+                        <li onclick="scrollToSection('03')"><a><span class="text-detail">03.</span> Poetry</a></li>
+                        <li><a href=""><span class="text-detail">04.</span> Other Art</a></li>
+                        <li><a href=""><span class="text-detail">05.</span> Contact Me</a></li>
+                    </ol>
+                </div>
+        </div>
+        </a>
+    </section>
+
+    <section>
+        <div class="main main-aboutme"><a id="02">
+                <div id="bottom">
+                    <p id="page-headers"> <span class="text-detail">02.</span> ABOUT ME
+            </a></p>
+            <p>Hey there! Thanks for checking out my website.
+                I am a current Global Business and Digital Arts
+                student at the University of Waterloo. I believe
+                design is all about creating (fun)ctional solutions
+                to every day problems in an aesthetically pleasing
+                manner. I want to improve the relationships between
+                people and the products they use in their everyday life
+                by using innovative design solutions to create meaningful
+                user experiences.
+                <br>
+                <br>
+                If you’d like to know more about me, I check out
+                my <a href="https://www.instagram.com/thomass.muir/" target="_blank">Instagram</a>
+                and <a href="https://twitter.com/ThomassMuir" target="_blank">Twitter</a>.</p>
+        </div>
+        </div>
+        </a>
+    </section>
+
+    <!-- -->
+    <section>
+        <div class="main main-poetry"><a id="03">
+                <div id="bottom">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="Images/Poetry/medusa.jpg" alt="Medusa Poem: Img from Unsplash">
+                                <p>Medusa</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <h1>Medusa</h1>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <p id="page-headers"> <a id="02"><span class="text-detail">03.</span> POETRY</a></p>
+                </div>
+            </a>
+        </div>
+
+    </section>
+
+    <!--  -->
+    <section>
+
+    </section>
+
+    <!--  -->
+    <section>
+
+    </section>
+
+
+
+</body>
+
+</html>
