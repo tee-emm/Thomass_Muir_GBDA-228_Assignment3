@@ -233,13 +233,6 @@ body {
     overflow: scroll;
 }
 
-.flip-card-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    overflow: scroll;
-}
-
 /* Navigation menu*/
 #menu {
     font-family: 'Kadwa', serif;
@@ -629,19 +622,18 @@ ul.sidenavMenuInner li:hover a {
 
 /* CONTACT FORM */
 
-.main-contactme {
-    /* positions at bottom */
+.main-otherart {
     position: relative;
     height: 100vh;
     display: flex;
 }
 
-
-.main-otherart {
-    /* Slightly greater than width of the sidebar */
+.main-contactme {
     position: relative;
     height: 100vh;
+    display: flex;
 }
+
 
 #contact-form {
     position: absolute;
