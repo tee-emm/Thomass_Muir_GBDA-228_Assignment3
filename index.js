@@ -29,27 +29,31 @@ function reset() {
     }
 }
 
+// copied code ends
+
+// copied code ends
+
 window.addEventListener('scroll', function () {
     let docHeight = ((document.height !== undefined) ? document.height : document.body.offsetHeight / window.innerHeight)
     if (!docHeight) return
 
     const scrollTop = window.scrollY
     let scroll = Math.floor(scrollTop / window.innerHeight)
-    if (currentPage !== scroll){
+    if (currentPage !== scroll) {
         let oldPage = currentPage
         console.log(oldPage)
         currentPage = scroll
         var scrollIndicator = document.querySelector('.scroll-indicator')
         scrollIndicator.children[oldPage].classList.remove("current-page")
         scrollIndicator.children[currentPage].classList.add("current-page")
-        scrollIndicator.children[scrollIndicator.children.length-1].innerHTML = "<span class='text-detail'>"+String(currentPage+1).padStart(2, "0")+".</span> &nbsp;&nbsp;| &nbsp; "+["Welcome","About Me","Poetry","Other Art","Contact Me"][currentPage]+""
-    } 
+        scrollIndicator.children[scrollIndicator.children.length - 1].innerHTML = "<span class='text-detail'>" + 
+        String(currentPage + 1).padStart(2, "0") + ".</span> &nbsp;&nbsp;| &nbsp; " + 
+        ["Welcome", "About Me", "Poetry", "Other Art", "Contact Me"][currentPage] + ""
+    }
 })
 
 // end scroll indicator
 
-
-// copied code ends
 
 // scrolls to certain section on page
 function scrollToSection(id) {
