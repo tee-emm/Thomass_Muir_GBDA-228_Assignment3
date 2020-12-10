@@ -20,11 +20,9 @@ $(function () {
 // Copied Code Starts
 // Scroll Indicator
 // scroll indicator
-const sections = document.querySelectorAll('section')
-const windowHeight = window.innerHeight
-const scrollIndicator = document.querySelector('.scroll-indicator')
-console.log(scrollIndicator)
-
+var sections = document.querySelectorAll('section')
+var currentPage = 0;
+var currentPage = 0;
 function reset() {
     for (var i = 0; i < scrollIndicator.children.length; i++) {
         scrollIndicator.children[i].classList.remove('current-page')
@@ -32,10 +30,20 @@ function reset() {
 }
 
 window.addEventListener('scroll', function () {
+    let docHeight = ((document.height !== undefined) ? document.height : document.body.offsetHeight / window.innerHeight)
+    if (!docHeight) return
+
     const scrollTop = window.scrollY
-    console.log("start scroll")
-    console.log(scrollTop)
-    console.log()
+    let scroll = Math.floor(scrollTop / window.innerHeight)
+    if (currentPage !== scroll){
+        let oldPage = currentPage
+        console.log(oldPage)
+        currentPage = scroll
+        var scrollIndicator = document.querySelector('.scroll-indicator')
+        scrollIndicator.children[oldPage].classList.remove("current-page")
+        scrollIndicator.children[currentPage].classList.add("current-page")
+        scrollIndicator.children[scrollIndicator.children.length-1].innerHTML = "<span class='text-detail'>"+String(currentPage+1).padStart(2, "0")+".</span> &nbsp;&nbsp;| &nbsp; "+["Welcome","About Me","Poetry","Other Art","Contact Me"][currentPage]+""
+    } 
 })
 
 // end scroll indicator
