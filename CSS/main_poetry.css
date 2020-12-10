@@ -30,7 +30,7 @@ Date retrieved: Wednesday, Dec. 6, 2020
     width: 22em;
     height: 30em;
     perspective: 1000px;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     /* Remove this if you don't want the 3D effect */
 }
 
@@ -93,8 +93,8 @@ Date retrieved: Wednesday, Dec. 6, 2020
     transform: rotateY(180deg);
     overflow: scroll;
 }
-
 /* Adapted code ends */
+
 
 /* Personal styling */
 /* Img on front */

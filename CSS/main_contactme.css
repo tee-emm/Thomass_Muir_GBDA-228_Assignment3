@@ -49,7 +49,7 @@ input {
     width: 30em;
     height: auto;
     padding: 0.5em;
-    margin-bottom: 1em;
+    margin-bottom: 2%;
 
 }
 
@@ -81,7 +81,7 @@ textarea {
     /* Positioning */
     width: 31.2em;
     height: auto;
-    padding: 0.5em;
+    padding:0.5em;
 
     /* Styling */
     font-size: 1em;

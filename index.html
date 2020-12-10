@@ -1,4 +1,13 @@
 <!-- 
+Thomass Muir
+GBDA 203
+Assignment 3: Personal Website
+Date: 12/09/20
+
+Best Viewing: Chrome, full size view 
+-->
+
+<!-- 
 Note: due to my design, I decided that it would be 
 more efficient to stick with a single page design compiled 
 in one html file. This is because a page-based navigation s
@@ -26,6 +35,7 @@ navigate my website seamlessly.  -->
     <link rel="stylesheet" href="CSS/main_poetry.css">
     <link rel="stylesheet" href="CSS/main_otherart.css">
     <link rel="stylesheet" href="CSS/main_contactme.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
 
     <!-- FONTS -->
     <!-- Poppins Semi-Bold 600 -->
@@ -61,20 +71,20 @@ navigate my website seamlessly.  -->
 <body>
     <!-- Fixed Sidebar -->
     <div class="sidebar">
-        <div id=logo-image><img src="Images/Thomass Logo.svg" alt="Thomass Logo"></div>
+        <div id=logo-image><img src="Images/Thomass Logo.svg" alt="Thomass Logo" width="100%" height="100%"></div>
         <br>
         <div id=sidebar-text>THOMASS MUIR</div>
 
         <!-- icons made by flaticon.com -->
         <div id=socialmedia-logos>
             <a href="https://www.instagram.com/thomass.muir/"><img src="Images/Social Media/instagram.svg"
-                    class="filter-icons" alt="Instagram Logo"></a>
+                    class="filter-icons" alt="Instagram Logo" width="100%" height="100%"></a>
             <a href="https://www.linkedin.com/in/thomass-muir/"><img src="Images/Social Media/linkedin.svg"
-                    class="filter-icons" alt="LinkedIn Logo"></a>
+                    class="filter-icons" alt="LinkedIn Logo" width="100%" height="100%"></a>
             <a href="https://twitter.com/ThomassMuir"><img src="Images/Social Media/twitter.svg" class="filter-icons"
-                    alt="Twitter Logo"></a>
+                    alt="Twitter Logo" width="100%" height="100%"></a>
             <a href="mailto:t2muir@uwaterloo.com"><img src="Images/Social Media/email.svg" class="filter-icons"
-                    alt="Email Logo"></a>
+                    alt="Email Logo" width="100%" height="100%"></a>
         </div>
     </div>
 
@@ -147,8 +157,8 @@ navigate my website seamlessly.  -->
                         <li onclick="scrollToSection('01')"><a><span class="text-detail">01.</span> Welcome</a></li>
                         <li onclick="scrollToSection('02')"><a><span class="text-detail">02.</span> About Me</a></li>
                         <li onclick="scrollToSection('03')"><a><span class="text-detail">03.</span> Poetry</a></li>
-                        <li><a href=""><span class="text-detail">04.</span> Other Art</a></li>
-                        <li><a href=""><span class="text-detail">05.</span> Contact Me</a></li>
+                        <li onclick="scrollToSection('04')"><a><span class="text-detail">04.</span> Other Art</a></li>
+                        <li onclick="scrollToSection('05')"><a><span class="text-detail">05.</span> Contact Me</a></li>
                     </ol>
 
                     <!-- Adapted Code Ends -->
@@ -158,26 +168,51 @@ navigate my website seamlessly.  -->
     </section>
 
     <!-- SECTION 2: About Me Page -->
-    <section>
+    <section >
         <div class="main main-aboutme"><a id="02">
                 <div id="bottom">
                     <p id="page-headers"> <span class="text-detail">02.</span> ABOUT ME
-            </a></p>
-            <p>Hey there! Thanks for checking out my website.
-                I am a current Global Business and Digital Arts
-                student at the University of Waterloo. I believe
-                design is all about creating (fun)ctional solutions
-                to every day problems in an aesthetically pleasing
-                manner. I want to improve the relationships between
-                people and the products they use in their everyday life
-                by using innovative design solutions to create meaningful
-                user experiences.
+            </a>
+            </p>
+            <p>Hi there! Thanks for checking out my site. I am a second year
+                student in Global Business and Digital Arts at the University of Waterloo. 
+                Here, you will be able to see a collection of my old poetry art pieces. Enjoy :)
                 <br>
                 <br>
                 If you’d like to know more about me, I check out
                 my <a href="https://www.instagram.com/thomass.muir/" target="_blank">Instagram</a>
-                and <a href="https://twitter.com/ThomassMuir" target="_blank">Twitter</a>.</p>
-        </div>
+                and <a href="https://twitter.com/ThomassMuir" target="_blank">Twitter</a>. For now,
+                here are some fun facts:</p>
+
+                <!-- About Me: Required Table -->
+                <table id="fun-fact-table">
+                    <tr>
+                        <th>No.</th>
+                        <th>Fun Fact</th>
+                    </tr>
+                    <tr>
+                        <td>01.</td>
+                        <td>I am half-Filipino and half-Jamaican.</td>
+                    </tr>
+                    <tr>
+                        <td>02.</td>
+                        <td>I played the xylophone and sang background on a Taylor Swift Track <br> 
+                            ("It's Nice to Have a Friend").</td>
+                    </tr>
+                    <tr>
+                        <td>03.</td>
+                        <td>I have a toy poodle named Lina who likes to greet people on her back feet.</td>
+                    </tr>
+                    <tr>
+                        <td>04.</td>
+                        <td>If I could be any colour, I would be green.</td>
+                    </tr>
+                    <tr>
+                        <td>05.</td>
+                            <td>My favourite Studio Ghibli Movie is Howl's Moving Castle.</td>
+                    </tr>
+                </table>
+            </div>
         </div>
         </a>
     </section>
@@ -196,11 +231,12 @@ navigate my website seamlessly.  -->
                      -->
 
                     <!-- Adapted code starts -->
-                    <div class="flip-card">
+                    <!-- Photo from Alex Azabache on Unsplash -->
+                    <div class="flip-card"  style="margin-right: 2em;">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
                                 <p><br>MEDUSA<br>Because nobody is born a villain - not even Medusa.</p>
-                                <img src="Images/Poetry/medusa.jpg" alt="Medusa Poem: Img from Unsplash">
+                                <img src="Images/Poetry/medusa.jpg" alt="Medusa Poem: Photo from Alex Azabache on Unsplash" wdth="100%" height="100%">
                             </div>
                             <div class="flip-card-back">
                                 <h1>Medusa</h1>
@@ -248,12 +284,13 @@ navigate my website seamlessly.  -->
                         </div>
                     </div>
 
-                    <div class="flip-card" , style="margin-left: 2em;">
+                    <!-- Photo from Jacob Rank on Unsplash -->
+                    <div class="flip-card"  style="margin-right: 2em;">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
                                 <p><br>WHEN LOVE ENDURES<br>Cupid and Psyche fall in love through sonnet.</p>
                                 <img src="Images/Poetry/when love endures.jpg"
-                                    alt="When Love Endures Poem: Img from Unsplash">
+                                    alt="When Love Endures Poem: Photo from Jacob Rank on Unsplash" width="100%" height="100%">
                             </div>
                             <div class="flip-card-back">
                                 <h1>When Love Endures</h1>
@@ -286,12 +323,13 @@ navigate my website seamlessly.  -->
                         </div>
                     </div>
 
-                    <div class="flip-card" , style="margin-left: 2em;">
+                    <!-- Photo by Benigno Hoyuela on Unsplash -->
+                    <div class="flip-card"  style="margin-right: 2em;">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
                                 <p><br>FALL OF MAN<br>Yet how should we live without due cognition?</p>
                                 <img src="Images/Poetry/fall of man.jpg"
-                                    alt="Fall of Man: Photo by Benigno Hoyuela on Unsplash">
+                                    alt="Fall of Man: Photo by Benigno Hoyuela on Unsplash" width="100%" height="100%">
                             </div>
                             <div class="flip-card-back">
                                 <h1>Fall of Man</h1>
@@ -330,7 +368,7 @@ navigate my website seamlessly.  -->
                     <!-- Adapted code ends -->
                     <br>
                     <p id="page-headers"><span class="text-detail">03.</span>POETRY
-            </a></p>
+            </a></p> 
         </div>
         </a>
         </div>
@@ -428,14 +466,12 @@ navigate my website seamlessly.  -->
                 <form id="contact-form" action="mailto:thomass@thomassmuir.com" method="GET">
                     <input name="Subject" id="subject" type="text" placeholder="Subject">
                     <textarea name="Body" id="message" type="text"
-                        placeholder="Message. Note: clicking submit will opens your default mail-app with recipient, subject, and body."></textarea>
+                        placeholder="Message. Note: clicking submit will open your default mail-app with a pre-filled recipient, subject, and body."></textarea>
                     <input id="submit" type="submit" value="Confirm">
                 </form>
             </div>
-        </div><a id="05">
-        </a>
+        </div><a id="05"></a>   
     </section>
 
 </body>
-
 </html>

@@ -8,7 +8,7 @@
     /* Other Positioning */
     position: relative;
     height: 100vh;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 /* Paragraph Styling */
@@ -40,4 +40,41 @@
 .main-aboutme a:active {
     text-decoration: none;
     color: #EDCC91;
+}
+
+/* About Me Table */
+
+/* Table Positioning */
+table, th, td {
+    margin: 0;
+    border: 0;
+    padding: 0.2em;
+    border-collapse: collapse;
+    border: solid 1px #985452;
+    border-radius: 1em;
+
+}
+
+/* Table Styling */
+#fun-fact-table {
+    padding: 0.5em;
+    font-family: 'Poppins', sans-serif;
+    color: #35363A;
+    ;
+
+}
+
+/* Table font + styling */
+#fun-fact-table th {
+    font-family: 'Kadwa', serif;
+    font-size: 1em;
+    letter-spacing: 0.2em;
+    color: #985452;
+    text-align: left;
+    padding: 0.5em;
+}
+
+/* Space aound the text */
+#fun-fact-table td{
+  padding: 0.5em;
 }

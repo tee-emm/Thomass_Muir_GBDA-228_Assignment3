@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    display: inline-block;
 }
 
 body {
@@ -55,50 +56,16 @@ body {
     padding: 0;
 }
 
+/* HEADER */
+.footer {
+    position: fixed;
+    height: 4em;
+    bottom: 0;
+    width: 100%;
+    background-color: #FDFBF7;
+    z-index: 60;
 
-
-/* ADDITIONAL RESOPNSIVE DESIGN RULES*/
-
-@media screen and (max-width: 650px) {
-
-    /* About Me Screen Text */
-    .main-aboutme p {
-        font-family: 'Poppins', sans-serif;
-        width: 60vw;
-        font-size: 1em;
-    }
-}
-
-@media screen and (max-width: 550px) {
-
-    /* Scrolling Indicator Label */
-    #indicator-text p {
-        /* Text positioning for scrolling indicatior label */
-        /* width: 15em; */
-        position: absolute;
-        display: none;
-        margin-top: 2em;
-    }
-}
-
-@media screen and (max-width: 450px) {
-
-    /* About Me Screen Text */
-    .main-aboutme p {
-        font-family: 'Poppins', sans-serif;
-        width: 60vw;
-        font-size: 0.8em;
-    }
-
-}
-
-@media screen and (max-height: 450px) {
-
-    .sidebar {
-        padding-top: 15px;
-    }
-
-    .sidebar a {
-        font-size: 18px;
-    }
+    margin: 0;
+    padding: 0;
+    padding: 0;
 }
