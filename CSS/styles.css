@@ -626,6 +626,7 @@ ul.sidenavMenuInner li:hover a {
     position: relative;
     height: 100vh;
     display: flex;
+    overflow: scroll;
 }
 
 .main-contactme {
