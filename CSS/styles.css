@@ -624,7 +624,7 @@ ul.sidenavMenuInner li:hover a {
 
 .main-otherart {
     position: relative;
-    height: 50vh;
+    height: 100vh;
     display: flex;
 }
 

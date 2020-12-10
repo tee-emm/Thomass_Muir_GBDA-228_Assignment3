@@ -16,8 +16,8 @@
   /* Create four equal columns that sits next to each other */
   .image-grid-column {
     flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
+    max-width: 20%;
+    padding: 4px;
   }
   
   .image-grid-column img {
