@@ -573,7 +573,9 @@ ul.sidenavMenuInner li:hover a {
     transform: rotateY(180deg);
 }
 
-
+.image-table {
+    padding: 10vw;
+}
 
 /* ADDITIONAL RESOPNSIVE DESIGN RULES*/
 
