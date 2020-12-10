@@ -94,6 +94,11 @@ body {
     margin-left: 7.5em;
 }
 
+.main-otherart {
+    /* Slightly greater than width of the sidebar */
+    margin-left: 7.5em;
+}
+
 .main-contactme {
     /* Slightly greater than width of the sidebar */
     margin-left: 7.5em;
@@ -629,6 +634,13 @@ ul.sidenavMenuInner li:hover a {
     position: relative;
     height: 100vh;
     display: flex;
+}
+
+
+.main-otherart {
+    /* Slightly greater than width of the sidebar */
+    position: relative;
+    height: 100vh;
 }
 
 #contact-form {
